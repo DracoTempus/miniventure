@@ -10,7 +10,7 @@ public class ToolRecipe extends Recipe {
 	
 	/** The type of tool, example: (ToolType.sword, ToolType.axe, ToolType.hoe) */
 	private ToolType type;
-	
+
 	/** The level of the tool (0 = wood, 1 = rock/stone, 2 = iron, 3 = gold, */
 	private int level;
 

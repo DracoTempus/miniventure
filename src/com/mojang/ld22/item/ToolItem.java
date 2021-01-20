@@ -35,6 +35,9 @@ public class ToolItem extends Item {
 	
 	/** Gets the colors for this tool */
 	public int getColor() {
+		if(type.colorOveride != -1){
+			return type.colorOveride;
+		}
 		return LEVEL_COLORS[level];
 	}
 
@@ -56,6 +59,9 @@ public class ToolItem extends Item {
 
 	/** Gets the name of this tool (and it's type) */
 	public String getName() {
+		if(!type.nameOverride.equals("")) {
+			return type.nameOverride;
+		}
 		return LEVEL_NAMES[level] + " " + type.name;
 	}
 	
@@ -74,6 +80,9 @@ public class ToolItem extends Item {
 		}
 		if (type == ToolType.sword) {
 			return (level + 1) * 3 + random.nextInt(2 + level * level * 2); //swords: (level + 1) * 3 + random number between 0 and (2 + level * level * 2)
+		}
+		if (type == ToolType.anime) {
+			return (level + 1) * 6 + random.nextInt(10 + level * level * 6); //anime: (level + 1) * 6 + random number between 0 and (10 + level * level * 6)
 		}
 		return 1;
 	}

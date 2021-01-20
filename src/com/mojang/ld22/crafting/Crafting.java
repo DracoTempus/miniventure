@@ -31,11 +31,12 @@ public class Crafting {
 			workbenchRecipes.add(new FurnitureRecipe(Lantern.class).addCost(Resource.wood, 5).addCost(Resource.slime, 10).addCost(Resource.glass, 4));
 			workbenchRecipes.add(new FurnitureRecipe(Oven.class).addCost(Resource.stone, 15));
 			workbenchRecipes.add(new FurnitureRecipe(Furnace.class).addCost(Resource.stone, 20));
-			workbenchRecipes.add(new FurnitureRecipe(Workbench.class).addCost(Resource.wood, 20));
+			workbenchRecipes.add(new FurnitureRecipe(Workbench.class).addCost(Resource.wood, 1));
 			workbenchRecipes.add(new FurnitureRecipe(Chest.class).addCost(Resource.wood, 20));
 			workbenchRecipes.add(new FurnitureRecipe(Anvil.class).addCost(Resource.ironIngot, 5));
 
 			workbenchRecipes.add(new ToolRecipe(ToolType.sword, 0).addCost(Resource.wood, 5));
+			workbenchRecipes.add(new ToolRecipe(ToolType.anime, 0).addCost(Resource.wood, 1));
 			workbenchRecipes.add(new ToolRecipe(ToolType.axe, 0).addCost(Resource.wood, 5));
 			workbenchRecipes.add(new ToolRecipe(ToolType.hoe, 0).addCost(Resource.wood, 5));
 			workbenchRecipes.add(new ToolRecipe(ToolType.pickaxe, 0).addCost(Resource.wood, 5));
